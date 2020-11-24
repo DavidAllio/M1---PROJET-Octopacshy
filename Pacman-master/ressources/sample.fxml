@@ -1,0 +1,27 @@
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<GridPane fx:id="GameWindow" fx:controller="Engine.Interface"
+          xmlns:fx="http://javafx.com/fxml" alignment="center" hgap="10" >
+    <style>
+        -fx-background-image: url("graphical/background/source.gif");
+        -fx-background-position: center center;
+    </style>
+    <AnchorPane fx:id="GameP" prefHeight="720.0" prefWidth="900.0" GridPane.columnIndex="0" GridPane.rowIndex="0" xmlns:fx="http://javafx.com/fxml">
+
+    </AnchorPane>
+    <AnchorPane id="ButtonsPane" prefHeight="90.0" GridPane.columnIndex="0" GridPane.rowIndex="1" xmlns:fx="http://javafx.com/fxml" >
+        <style>
+            -fx-background-color: white;
+        </style>
+        <CheckBox fx:id="checkDebug" layoutX="14.0" layoutY="10.0" mnemonicParsing="false" text="Mode debug"/>
+        <Label text="ALLIO David" layoutX="650.0"></Label>
+        <Label text="BARRY Jean-Noël" layoutX="750.0"></Label>
+        <Label text="DUARTE Florian" layoutX="625.0" layoutY="25.0"></Label>
+        <Label text="PASTOR Jean-Baptiste" layoutX="750.0" layoutY="25.0"></Label>
+    </AnchorPane>
+
+</GridPane>
